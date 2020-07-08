@@ -45,7 +45,7 @@ namespace Selenium_WebDriver_example_C_
             driver = new FirefoxDriver(options);
 
 
-            wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+        wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
         }
 
         [Test]

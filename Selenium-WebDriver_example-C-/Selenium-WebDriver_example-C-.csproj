@@ -61,8 +61,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LeftMenu.cs" />
     <Compile Include="LogintToAdmin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
