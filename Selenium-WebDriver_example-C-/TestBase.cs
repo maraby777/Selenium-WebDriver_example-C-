@@ -81,7 +81,6 @@ namespace Selenium_WebDriver_example_C_
             driver = GetDriver(BrowserEnum.CHROME);
             wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
 
-            LoginAsAdmin();
         }
 
         [TearDown]
@@ -91,13 +90,19 @@ namespace Selenium_WebDriver_example_C_
             driver = null;
         }
 
-        private void LoginAsAdmin()
+        public void LoginAsAdmin()
         {
             driver.Url = "http://localhost/litecart/admin/login.php";
             driver.FindElement(By.Name("username")).SendKeys("admin");
             driver.FindElement(By.Name("password")).SendKeys("admin");
             driver.FindElement(By.Name("login")).Click();
             wait.Until(ExpectedConditions.TitleIs("My Store"));
+        }
+
+        public void LoginAsUser()
+        {
+            driver.Url = "http://localhost/litecart/en/";
+            wait.Until(ExpectedConditions.TitleIs("Online Store | My Store"));
         }
     }
 }

@@ -61,6 +61,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CheckingStickers.cs" />
     <Compile Include="LeftMenu.cs" />
     <Compile Include="LogintToAdmin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
