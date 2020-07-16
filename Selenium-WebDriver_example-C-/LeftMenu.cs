@@ -16,7 +16,7 @@ namespace Selenium_WebDriver_example_C_
         [Test]
         public void CheckingTitleInLeftMenu()
         {
-            LoginAsAdmin();
+            LoginAsAdmin("http://localhost/litecart/admin/login.php");
 
             By mainElements = By.CssSelector("ul#box-apps-menu > li");
             By subElements = By.CssSelector("ul#box-apps-menu ul.docs a");

@@ -55,7 +55,7 @@ namespace Selenium_WebDriver_example_C_
             driver.FindElement(By.Name("username")).SendKeys("admin");
             driver.FindElement(By.Name("password")).SendKeys("admin");
             driver.FindElement(By.Name("login")).Click();
-            wait.Until(ExpectedConditions.TitleIs("My Store"));
+            wait.Until(ExpectedConditions.ElementExists(By.CssSelector(".notice.success")));
         }
 
         [TearDown]

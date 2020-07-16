@@ -61,6 +61,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AlphabetOrdetList.cs" />
+    <Compile Include="CampaignsCheck.cs" />
     <Compile Include="CheckingStickers.cs" />
     <Compile Include="LeftMenu.cs" />
     <Compile Include="LogintToAdmin.cs" />

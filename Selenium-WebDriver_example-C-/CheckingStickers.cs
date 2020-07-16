@@ -17,13 +17,13 @@ namespace Selenium_WebDriver_example_C_
         [Test]
         public void CheckingStickersOnProdukt()
         {
-            LoginAsUser();
+            LoginAsUser("http://localhost/litecart/en/");
 
             for (int i = 0; i < driver.FindElements(By.CssSelector("li.product")).Count; i++)
             { 
-                Assert.AreEqual(driver.FindElements(By.CssSelector("li.product"))
+                Assert.AreEqual(1, driver.FindElements(By.CssSelector("li.product"))
                     .ElementAt(i)
-                    .FindElements(By.CssSelector("div.sticker")).Count, 1);
+                    .FindElements(By.CssSelector("div.sticker")).Count);
             }
         }
     }
